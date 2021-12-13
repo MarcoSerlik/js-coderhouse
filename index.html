@@ -8,8 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/logo.ico">
     <title>Dico</title>
@@ -21,62 +24,56 @@
 
     <header>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top">
 
-            <div class="container-fluid">
+            <div class="container">
 
-                <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="img/logoAnclaN.png" alt="" class="w-25"></a>
 
-                    <a class="navbar-brand" href="index.html"><img src="img/logoAnclaN.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                        <span class="navbar-toggler-icon"></span>
+                    <ul class="navbar-nav d-flex justify-content-end w-100 mb-2 mb-lg-0">
 
-                    </button>
+                        <li class="nav-item dropdown">
 
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <a class="nav-link" href="#sobreDico">Sobre Dico</a>
 
-                        <ul class="navbar-nav justify-content-end w-100">
+                        </li>
 
-                            <li class="nav-item dropdown">
+                        <li class="nav-item">
 
-                                <a class="nav-link" href="#">Sobre Dico</a>
+                            <a class="nav-link" href="#">Servicios</a>
 
-                            </li>
+                        </li>
 
-                            <li class="nav-item">
+                        <li class="nav-item">
 
-                                <a class="nav-link" href="#">Servicios</a>
+                            <a class="nav-link" href="#">Portfolio</a>
 
-                            </li>
+                        </li>
 
-                            <li class="nav-item">
+                        <li class="nav-item dropdown">
 
-                                <a class="nav-link" href="#">Portfolio</a>
+                            <a class="nav-link" href="#">Ayuda</a>
 
-                            </li>
+                        </li>
 
-                            <li class="nav-item dropdown">
+                        <li class="nav-item">
 
-                                <a class="nav-link" href="#">Ayuda</a>
+                            <a class="nav-link item-contacto c__blanco text-center" href="#contratar">Contratar</a>
 
-                            </li>
+                        </li>
 
-                            <li class="nav-item">
-
-                                <a class="nav-link item-contacto c__blanco text-center"
-                                    href="index.html#contacto">Contacto</a>
-
-                            </li>
-
-                        </ul>
-
-                    </div>
+                    </ul>
 
                 </div>
+
 
             </div>
 
@@ -88,61 +85,357 @@
 
     <div class="container-fluid portada" id="home">
 
-        <div class="container" data-aos="fade-right">
+        <div class="container h-100" data-aos="fade-right">
 
-            <h1 class="text-left col-12 t__regular t__h1" data-aos="fade-right">
+            <div class="row">
 
-                <span class="c__violeta t__black">¡Hola!</span> Que bueno que llegaste.
+                <h1 class="text-left t__regular t__h1 w-50" data-aos="fade-right">
 
-            </h1>
+                    <span class="c__violeta t__black">¡Hola!</span> Que bueno que llegaste.
 
-            <p class="text-left col-12 t__regular t__subtitulohome">Emprendé. Digitalizá tu negocio. Rompé barreras.
-            </p>
+                </h1>
 
-            <button class="col-12 buttonHome t__buttonT t__bold rounded">Obtené tu sitio Web</button>
+                <p class="text-left t__regular t__subtitulohome">Emprendé. Digitalizá tu negocio. Rompé barreras.
+                </p>
+
+                <a class="d-flex justify-content-center align-content-center text-center buttonHome t__buttonT t__bold rounded pt-3"
+                    href="#contratar">Obtené tu sitio Web</a>
+            </div>
 
         </div>
 
     </div>
 
-    <!-- Form contacto Interactivo -->
+    <!-------------------- CONTENEDOR MAIN ------------->
 
-    <div class="container contacto" id="contacto">
+    <div class="container presentacion">
 
-        <div class="row">
+        <div class="row" id="sobreDico">
 
-            <div class="col-8">
+            <h2 class="col-12 text-center t__subPrimerSeccion primerBanner mx-auto t__regular" data-aos="fade-in">
+                Nuevos <span class="c__violeta t__black">tiempos</span> , nuevas <span class="c__violeta t__black">
+                    soluciones</span> para tus problemas. Somos Dico, tu mejor aliado para construir tu presencia
+                digital.</h2>
 
-                <h2 class="col-12 t__bold t__tituloB">Trabajemos Juntos</h2>
+            <div class="col-12 text-center fs-4 primerBannerSub mx-auto t__regular" data-aos="fade-in">
+                Algunas de las características y ventajas que brindamos y proveemos a todos nuestro clientes</div>
 
-                <p class="col-12 t__body c__grisc">Completá el formulario y nos pondremos en contacto.</p>
+        </div>
 
-                <div class="col-12 ">
+        <div class="col-12 d-flex flex-column flex-md-row justify-content-center">
 
-                    <input type="text" class="col-4" placeholder="Nombre/Emprendimiento">
+            <div class="tarjetas tarjeta-1 mx-auto" data-aos="fade-up" data-aos-delay="100">
 
-                    <input type="text" class="col-5" placeholder="Email">
+                <img class="mx-auto col-12" src="img/ux.png" alt="">
 
-                    <button class="col-2 c__blanco">Enviar</button>
+                <h3 class="text-center mx-auto c__violeta col-12">UX/UI Design</h3>
+
+                <p class="text-center mx-auto col-12">Diseñamos un aspecto profesional y un manejo simple y único.
+                    Nuestro diseño es fácil de usar.</p>
+
+            </div>
+
+            <div class="tarjetas tarjeta-2 mx-auto" data-aos="fade-up" data-aos-delay="200">
+
+                <img class="mx-auto col-12" src="img/diseño.png" alt="">
+
+                <h3 class="text-center mx-auto col-12 c__violeta">Web Development.</h3>
+
+                <p class="text-center mx-auto col-12">Creamos tu página web con la última tecnología. Para todos los
+                    dispositivos, dinámica e interactiva.</p>
+
+            </div>
+
+            <div class="tarjetas tarjeta-3 mx-auto" data-aos="fade-up" data-aos-delay="300">
+
+                <img class="mx-auto col-12" src="img/exp.png" alt="">
+
+                <h3 class="text-center mx-auto col-12 c__violeta"> Marketing y SEO</h3>
+
+                <p class="text-center mx-auto col-12">La armonía del diseño, la tecnología del desarrollo, y una mirada
+                    análitica y creativa que combina todo para entregar el mensaje correcto a tus clientes.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <main class="container">
+
+        <!-- Form contacto Interactivo -->
+
+        <div class="contacto p-3 " data-aos="fade-up" id="contratar">
+
+            <div class="container row" id="primerForm">
+
+                <div class="col-8 row">
+
+                    <h2 class="col-12 t__bold t__tituloB">Trabajar juntos nunca fue tan fácil!</h2>
+
+                    <p class="col-12 t__body c__grisc mt-2">Dejanos tus datos, seleccioná los servicios que necesitas y
+                        en 24hs hábiles nos pondremos en contacto para comenzar a trabajar!</p>
+
+                    <form id="formulario" class="col-12 row p-4">
+
+                        <div class="col-6 control-form">
+                            <input class="w-100 p-1" type="text" id="nombreForm" placeholder="Nombre Apellido">
+                            <p class="fs-6 c__rojo"></p>
+                        </div>
+
+                        <div class="col-6 control-form">
+                            <input class="w-100 p-1" type="text" id="emailForm" placeholder="Email">
+                            <p class="fs-6 c__rojo"></p>
+                        </div>
+
+                        <div class="col-6 control-form">
+                            <input class="w-100 p-1" type="number" id="numeroForm" placeholder="+54 11 1111-1111">
+                            <p class="fs-6 c__rojo"></p>
+                        </div>
+
+                        <div class="col-6 control-form">
+
+                            <select class="w-100 p-1" id="paisForm">
+                                <option value="Seleccione">Seleccione...</option>
+
+                            </select>
+                            <p class="fs-6 c__rojo"></p>
+                        </div>
+
+                        <button type="submit" class="col-2 c__blanco buttonForm my-3 me-3" id="firstSubmit"> <span>
+                                Siguiente </span>
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <div class="col-4 d-flex justify-content-center align-content-center">
+
+                    <img class="w-100 img-fluid" src="img/contacto.png" alt="">
 
                 </div>
 
             </div>
 
-            <div class="col-4">
+            <!------------------ CONTRATACIÓN DE SERVICIOS ------------->
 
-                <img class="text-center" src="img/contacto.png" alt="">
+            <div id="segundoForm"
+                class="container row col-12 d-flex justify-content-around align-content-center d-none">
+
+                <h2 class="col-12">Servicios que ofrecemos:</h2>
+
+                <div class="col-12 row mt-3">
+
+                    <p class="fs-4 col-1">Mostrar:</p>
+
+                    <div class="col-10 filtros d-flex justify-content-start">
+
+                        <button id="filtroTodo" class="button-filter mx-2">Todo</button>
+
+                        <button id="filtroDiseño" class="button-filter mx-2">Diseño</button>
+
+                        <button id="filtroDesarrollo" class="button-filter mx-2">Desarrollo</button>
+
+                        <button id="filtroMarketing" class="button-filter mx-2">Marketing</button>
+
+                    </div>
+
+                </div>
+
+                <div id="contenedorCards" class="col-12 d-flex justify-content-around align-content-center flex-wrap">
+                </div>
+
+                <div class="d-flex col-12 p-4" id="botonesSegForm">
+                    <button id="botonFirstAtras" class="c__blanco btn t__buttonT rounded me-3">Atrás</button>
+                    <button id="botonSegSig" class="buttonForm"><span>Siguiente</span></button>
+                </div>
+            </div>
+
+            <!------------------------------ CHECKOUT DEL FORM  ------------------------------>
+
+            <div id="checkOut" class="container row d-none">
+
+                <h2 class="mb-3">¡Perfecto! Gracias por confiar en nosotros.</h2>
+
+                <p class="fs-5">Antes de ponernos manos a la obra, necesitamos que confirmes que todos los datos sean
+                    correctos:</p>
+
+                <div id="contenedorDatosUsuario" class="mb-4 container offset-1 col-10 row border rounded p-3">
+
+                    <div class="col-6 d-flex flex-column justify-content-center my-2">
+                        <h5>Nombre: </h5>
+                        <p class="mb-0" id="contenedorNombre"></p>
+                    </div>
+
+                    <div class="col-6 d-flex flex-column justify-content-center my-2">
+                        <h5>Email: </h5>
+                        <p class="mb-0" id="contenedorEmail"></p>
+                    </div>
+
+                    <div class="col-6 d-flex flex-column justify-content-center my-2">
+                        <h5>Telefono: </h5>
+                        <p class="mb-0" id="contenedorTelefono"></p>
+                    </div>
+
+                    <div class="col-6 d-flex flex-column justify-content-center my-2">
+                        <h5>Pais: </h5>
+                        <p class="mb-0" id="contenedorPais"></p>
+                    </div>
+
+                </div>
+
+                <h3>Los servicios que solicitaste son:</h3>
+
+                <div id="serviciosCheckOut"
+                    class="col-12 d-flex flex-column justify-content-center align-content-center">
+
+                </div>
+
+                <div id="precioTotal" class="col-12 d-flex d-flex justify-content-between">
+
+                    <h4>Precio Final:</h4>
+
+                    <div class="fw-bold fs-3">$ <span id="precioFinal"></span> </div>
+
+                </div>
+
+                <div class=" d-flex col-12 p-4" id="botonesCheckOut">
+                    <button id="botonCheckOutAtras" class="c__blanco btn t__buttonT rounded me-3">Atrás</button>
+                    <button id="botonCheckOutFinal" class="buttonForm"><span>Contratar!</span></button>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER ------------------------>
+    <footer>
+
+        <div class="container border-bottom">
+
+            <div class="row">
+
+                <div class="col-12 col-md-2">
+
+                    <div class="col-12 d-flex justify-content-center d-lg-inline"> <img src="../img/logoAnclaB.png"
+                            alt=""> </div>
+
+                    <div class="col-12 c__grisc dicoDerechos t__footert__text text-center text-lg-start">Dico © 2020 ,
+                        Todos los derechos reservados.</div>
+
+                    <div class="col-12 c__celeste mail t__footert__text text-center text-lg-start">somosdico@gmail.com
+                    </div>
+
+                </div>
+
+                <div class="col-2 d-none d-lg-inline row">
+
+                    <h4 class="col-12 t__footer__Titulos c__blanco">Nosotros</h4>
+
+                    <ul class="col-12 c__blanco">
+
+                        <li class="t__footert__text ">Sobre nosotros</li>
+
+                        <li class="t__footert__text">Equipo</li>
+
+                        <li class="t__footert__text">Referidos</li>
+
+                        <li class="t__footert__text">Nuestra historia</li>
+
+                        <li class="t__footert__text">Terminos de uso</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-2 d-none d-lg-inline row">
+
+                    <h4 class="col-12 t__footer__Titulos c__blanco">Dico</h4>
+
+                    <ul class="col-12 c__blanco">
+
+                        <li class="t__footert__text">Terminos y condiciones</li>
+
+                        <li class="t__footert__text">Politicas de privacidad </li>
+
+                        <li class="t__footert__text">Privacidad y Cookies</li>
+
+                        <li class="t__footert__text">Mapa del Sitio</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-12 col-md-3 redes c__blanco row">
+
+                    <h4 class="col-10 t__footer__Titulos text-center text-lg-start">Nuestras redes</h4>
+
+                    <ul class="col-12 fs-5 d-flex justify-content-around">
+
+                        <li><i class="bi bi-instagram"> </i></li>
+
+                        <li><i class="bi bi-facebook"></i></li>
+
+                        <li><i class="bi bi-twitter"></i></li>
+
+                        <li><i class="bi bi-linkedin"></i></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-12 col-md-3 row">
+
+                    <!-- FORM NO FUNCIONAL, MERAMENTE DECORATIVO -->
+
+                    <h4 class="col-12 t__footer__Titulos c__blanco text-center text-lg-start">Suscribite a nuestro
+                        Newsletter</h4>
+
+                    <div class="row">
+
+                        <form class="col-12" action="">
+
+                            <input type="text" class="col-12 col-lg-7" placeholder="Email">
+
+                            <button class="col-5 offset-3 offset-md-0 col-lg-4 c__blanco">Enviar</button>
+
+                        </form>
+
+                    </div>
+
+                </div>
 
             </div>
 
         </div>
 
-    </div>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        <div class="col-12 c__blanco">
+
+            <div class="text-center t__footert__text"> Marco Serlik / Todos los derechos reservados </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="js/main.js"></script>
+    <script src="js/paisAPI.js"></script>
+    <script src="js/filtros.js"></script>
+    <script src="js/validacion.js"></script>
 </body>
 
 </html>

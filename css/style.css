@@ -1,99 +1,29 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box; }
 
 a {
   text-decoration: none; }
 
-.portada {
-  height: 100vh;
-  width: 100%;
-  background-image: url(../img/fondohome.png);
-  background-position: center;
-  background-size: cover; }
+html {
+  scroll-behavior: smooth; }
 
-#home .container {
-  height: 100%; }
-
-#home h1 {
-  margin-top: 40px;
-  width: 500px; }
-
-#home p {
-  width: 400px;
-  margin-top: 20px;
-  height: auto; }
-
-.contacto {
-  margin: 100px auto;
-  box-shadow: 0px 5px 6px -6px #000000;
-  border-radius: 70px; }
-  .contacto p {
-    margin-bottom: 40px; }
-  .contacto img {
-    width: 80%; }
-  .contacto input {
-    border-color: #8011F2; }
-  .contacto button {
-    background-color: #8011F2;
-    height: 40px; }
-
-button {
-  box-shadow: 0px 5px 6px -6px #000000;
-  border-radius: 5px; }
-
-input {
-  border-color: #8011F2;
-  border-radius: 5px;
-  height: 40px; }
-
-.buttonHome {
-  background-color: #0E153A;
-  color: #ffffff;
-  width: 200px;
-  height: 65px;
-  border: none;
-  border-radius: 16px;
-  margin-left: 14px; }
-
-footer input {
-  border-radius: 6px; }
-
-footer button {
-  border-radius: 6px; }
-
-header img {
-  width: 10%; }
-
-header li {
-  margin-right: 23px; }
-
-header li:hover {
-  text-decoration: underline #8011F2 solid 2px; }
-
-header .dropdown-menu {
-  border-radius: 8px;
-  box-shadow: 0px 5px 6px -6px #000000; }
-
-header .item-contacto {
-  background-color: #8011F2;
-  border-radius: 5px;
-  width: 100px;
-  color: #ffffff !important;
-  box-shadow: 0px 5px 6px -6px #000000; }
+.c__rojo {
+  color: red; }
 
 .c__violeta {
-  color: #8011F2; }
+  color: #8011f2; }
 
 .c__azul {
-  color: #0E153A; }
+  color: #0e153a; }
 
 .c__celeste {
-  color: #5CA4AE; }
+  color: #5ca4ae; }
 
 .c__blanco {
-  color: #FFFFFF; }
+  color: #ffffff; }
 
 .c__griso {
   color: #434343; }
@@ -103,15 +33,32 @@ header .item-contacto {
 
 button {
   box-shadow: 0px 5px 6px -6px #000000;
-  border-radius: 5px; }
+  border-radius: 5px;
+  transition: 0.2s ease-in-out; }
 
-input {
-  border-color: #8011F2;
+input,
+select {
+  border: 2px solid #8011f2;
   border-radius: 5px;
   height: 40px; }
 
+input,
+select:focus {
+  outline: none; }
+
+.card {
+  box-shadow: 0px 4px 94px 0px #00000026;
+  border-radius: 30px;
+  width: 18rem; }
+
+.form-check-input:focus {
+  outline: none; }
+
+.form-check-input:active {
+  outline: none; }
+
 .buttonHome {
-  background-color: #0E153A;
+  background-color: #0e153a;
   color: #ffffff;
   width: 200px;
   height: 65px;
@@ -124,6 +71,200 @@ footer input {
 
 footer button {
   border-radius: 6px; }
+
+.contacto .buttonForm {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  color: #ffffff;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s; }
+
+.buttonForm:active,
+.buttonForm:hover {
+  outline: 0 !important; }
+
+button span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e153a;
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms; }
+
+.buttonForm:hover span {
+  background: none; }
+
+.buttonForm:active {
+  transform: scale(0.9); }
+
+.filtros .button-filter {
+  font-size: 14px;
+  border-radius: 20px;
+  text-align: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: black;
+  background-color: white;
+  border: blueviolet 2px solid; }
+
+#primerForm,
+#segundoForm,
+#checkOut {
+  transition: 0.5s ease-in-out; }
+
+#primerForm button:hover,
+#segundoForm button:hover,
+#checkOut button button:hover {
+  background-color: #ffffff;
+  border: #8011f2 2px solid;
+  color: #8011f2; }
+
+#primerForm .button-filter:hover,
+#segundoForm .button-filter:hover,
+#checkOut button .button-filter:hover {
+  background-color: #5ca4ae;
+  color: #ffffff;
+  border: #5ca4ae 2px solid; }
+
+#primerForm .buttonForm:hover,
+#segundoForm .buttonForm:hover,
+#checkOut button .buttonForm:hover {
+  color: white;
+  border: none; }
+
+#primerForm .btn-agregar,
+#segundoForm .btn-agregar,
+#checkOut button .btn-agregar {
+  background-color: #5dcd87; }
+
+#primerForm .btn-agregar:hover,
+#segundoForm .btn-agregar:hover,
+#checkOut button .btn-agregar:hover {
+  background-color: white;
+  color: #5dcd87;
+  border: #5dcd87 1px solid; }
+
+#primerForm .btn-borrar,
+#segundoForm .btn-borrar,
+#checkOut button .btn-borrar {
+  background-color: white;
+  color: red;
+  border: red 1px solid; }
+
+#primerForm .btn-borrar:hover,
+#segundoForm .btn-borrar:hover,
+#checkOut button .btn-borrar:hover {
+  background-color: red;
+  color: white;
+  border: red 1px solid; }
+
+.control-form input,
+select {
+  border: 2px solid #8011f2 !important; }
+
+.control-form.form-novalido input {
+  border: red 2px solid !important; }
+
+.form-novalido select {
+  border: red 2px solid !important; }
+
+.portada {
+  height: 100vh;
+  background-image: url(../img/fondohome.png);
+  background-position: center;
+  background-size: cover; }
+  .portada h1 {
+    margin-top: 20vh; }
+
+#home p {
+  margin-top: 20px;
+  height: auto; }
+
+#home a {
+  color: #ffffff; }
+
+.tituloh1 {
+  width: 500px; }
+
+.primerBanner {
+  margin-top: 75px; }
+
+.primerBannerSub {
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 25px;
+  width: 30%; }
+
+.tarjetas {
+  margin: 40px 20px;
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 6px -6px #000000;
+  text-align: center; }
+  .tarjetas img {
+    width: 250px;
+    height: auto; }
+  .tarjetas p {
+    width: 80%;
+    height: 30%;
+    font-size: small; }
+
+.tarjeta-1 h3,
+.tarjeta-2 h3,
+.tarjeta-3 h3 {
+  margin-top: 18px; }
+
+.tarjeta-1 p,
+.tarjeta-2 p,
+.tarjeta-3 p {
+  margin-top: 25px; }
+
+.contacto {
+  margin: 100px auto;
+  box-shadow: 0px 5px 6px -6px #000000;
+  border-radius: 70px; }
+  .contacto p {
+    margin-bottom: 40px; }
+  .contacto img {
+    width: 80%; }
+  .contacto button {
+    background-color: #8011f2;
+    height: 40px;
+    transition: 0.2s ease-in-out; }
+
+header {
+  transition: ease-in-out; }
+  header li {
+    margin-right: 23px; }
+  header li:hover {
+    text-decoration: underline #8011f2 solid 2px; }
+  header .dropdown-menu {
+    border-radius: 8px;
+    box-shadow: 0px 5px 6px -6px #000000; }
+  header .item-contacto {
+    background-color: #8011f2;
+    border-radius: 5px;
+    width: 100px;
+    color: #ffffff !important;
+    box-shadow: 0px 5px 6px -6px #000000; }
 
 .t__regular {
   font-style: normal;
@@ -150,7 +291,7 @@ footer button {
   font-style: normal;
   font-size: 1.375rem;
   line-height: 1.625rem;
-  color: #0E153A; }
+  color: #0e153a; }
 
 .t__h1 {
   font-size: 4rem;
@@ -178,7 +319,7 @@ footer button {
 
 .t__buttonT {
   font-size: 1.1rem;
-  color: #FFFFFF; }
+  color: #ffffff; }
 
 .t__buttonS {
   font-size: 1rem;
@@ -199,3 +340,54 @@ footer button {
 
 .t__footert__text {
   font-size: 0.875rem; }
+
+footer {
+  margin-top: 30px;
+  background-color: #0e153a;
+  padding: 30px; }
+  footer li {
+    list-style-type: none; }
+  footer img {
+    width: 100%; }
+  footer .redes li {
+    display: inline-block; }
+  footer input {
+    height: 35px;
+    border-color: #8011f2; }
+  footer button {
+    background-color: #0e153a;
+    border-color: #8011f2;
+    box-shadow: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 10%; }
+  footer button:hover {
+    background-color: #8011f2; }
+  footer h4 {
+    margin: 10px auto; }
+  footer .mail {
+    margin-top: 5px; }
+  footer .dicoDerechos {
+    margin-top: 5px; }
+  footer i {
+    color: #ffffff; }
+  footer i:hover {
+    color: #8011f2; }
+  footer .container {
+    margin-bottom: 10px;
+    padding-bottom: 10px; }
+  footer input {
+    padding: 5px; }
+
+@media (max-width: 991.98px) {
+  footer img {
+    width: 150px;
+    margin: 15px auto; }
+  footer .redes {
+    margin: 15px auto; }
+    footer .redes li {
+      margin-top: 10px;
+      font-size: 25px; }
+  footer button {
+    margin-top: 10px;
+    width: 30%; } }

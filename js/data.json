@@ -1,0 +1,130 @@
+[
+    {
+        "id": 1,
+        "tipo": "diseño",
+        "nombre": "Diseño de tu web",
+        "descripcion":"Diseño de la identidad visual de tu marca y diseño de toda la web para el emprendimiento.",
+        "precio": 20000
+    }, 
+
+    {
+        "id": 2,
+        "tipo": "desarrollo",
+        "nombre": "Desarrollo de Landing Page",
+        "descripcion": "Desarrollo de una Landing Page para tu emprendimiento.",
+        "precio": 15000
+    }, 
+
+    {
+        "id": 3,
+        "tipo": "marketing",
+        "nombre": "Campaña de Marketing",
+        "descripcion": "Campaña de Marketing Digital para tu proyecto.",
+        "precio": 25000
+    }, 
+
+    {
+        "id": 4,
+        "tipo": "desarrollo",
+        "nombre": "Desarrollo de tu E-commerce",
+        "descripcion": "Desarrollo un E-commerce para tu emprendimiento utilizando WordPress. ",
+        "precio": 35000
+    },
+
+    {
+        "id": 5,
+        "tipo": "desarrollo",
+        "nombre": "Desarrollo de tu Blog",
+        "descripcion": "Desarrollo de un Blog Personal para darte a conocer utilizando WordPress.",
+        "precio": 20000
+    },
+
+    {
+        "id": 6,
+        "tipo": "diseño",
+        "nombre": "Diseño de logo",
+        "descripcion": "Diseño de un logo para tu marca o proyecto personal.",
+        "precio": 10000
+    },
+
+    {
+        "id": 7,
+        "tipo": "diseño",
+        "nombre": "Diseño de Merchandising",
+        "descripcion": "Diseño de un logo para tu marca o proyecto personal.",
+        "precio": 20000
+    },
+
+    {
+        "id": 8,
+        "tipo": "diseño",
+        "nombre": "Diseño de Marca",
+        "descripcion": "Diseño de Marca Manual normativo y aplicaciones básicas (hasta 5 piezas).",
+        "precio": 14000
+    },
+
+    {
+        "id": 9,
+        "tipo": "diseño",
+        "nombre": "Diseño de Marca Corporativa Total",
+        "descripcion": "Logotipo / Isotipo / Aplicaciones básicas / Guía uso y aplicaciones",
+        "precio": 33000
+    },
+
+    {
+        "id": 10,
+        "tipo": "diseño",
+        "nombre": "Diseño de Banner Web",
+        "descripcion": "Diseño de banner publicitario para tu proyecto digital.",
+        "precio": 8000
+    },
+
+    {
+        "id": 11,
+        "tipo": "diseño",
+        "nombre": "Diseño de Mailing Publicitario",
+        "descripcion": "Diseño de mails publicitarios para campaña de Marketing.",
+        "precio": 5000
+    },
+
+    {
+        "id": 12,
+        "tipo": "marketing",
+        "nombre": "Naming para tu emprendimiento",
+        "descripcion": "Proceso de definición para nombre de tu marca.",
+        "precio": 10000
+    }, 
+
+    {
+        "id": 13,
+        "tipo": "marketing",
+        "nombre": "Slogan o lema para tu marca.",
+        "descripcion": "Proceso de definición o “manera de ser” para tu marca.",
+        "precio": 7000
+    }, 
+
+    {
+        "id": 14,
+        "tipo": "marketing",
+        "nombre": "Estrategia de marketing y comunicación en redes sociales",
+        "descripcion": "Armado de una estrategia para lograr llevar tu marca en las redes al siguiente nivel!",
+        "precio": 15000
+    }, 
+
+    {
+        "id": 15,
+        "tipo": "marketing",
+        "nombre": "Gestión de redes sociales de tu proyecto",
+        "descripcion": "Gestion por 3 meses de las redes sociales de tu proyecto con posteos personalizados incluidos.",
+        "precio": 15000
+    },
+
+    {
+        "id": 16,
+        "tipo": "desarrollo",
+        "nombre": "Desarrollo de Web Institucional",
+        "descripcion": "Desarrollo de un Web Institucional formal con los requerimientos que vos necesites.",
+        "precio": 40000
+    }
+
+]
