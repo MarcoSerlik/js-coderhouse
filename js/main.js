@@ -64,7 +64,7 @@ const usuario = {
 /*---------------------------------------------------- Declaracion de funciones -------------------------------------------*/
 
 //Funcion que se va a activar cuando se haga click en el submit del primer form, haciendo el fetch y creando la estructura html correspondiente.
-function submitForm() {
+const submitForm = () => {
 
   fetch("./js/data.json")
     .then((resp) => resp.json())
@@ -77,7 +77,7 @@ function submitForm() {
 
 // Funcion que se llama para mostrar los objetos y botones en la seleccion de los servicios. 
 
-function constructorCardsYBtn(array) {
+const constructorCardsYBtn = (array) => {
 
   contenedorCards.innerHTML = ""
 
@@ -121,7 +121,7 @@ function constructorCardsYBtn(array) {
 
 
 // Funcion para mostrar servicios seleccionados en el CheckOut
-function mostrarCheckOut() {
+const mostrarCheckOut = () => {
 
   serviciosCheckOut.innerHTML = ""
 
@@ -169,7 +169,7 @@ function mostrarCheckOut() {
 
 // Funcion para agregar servicio al carrito. Luego se la asigno al boton correspondiente. 
 
-function agregarAlCarrito(servId) {
+const agregarAlCarrito = (servId) => {
   const item = servicios.find((serv) => serv.id === servId)
 
   if (carritoServicios.includes(item)) {
@@ -201,7 +201,7 @@ function agregarAlCarrito(servId) {
 
 // Funcion para borrar el servicio del carrito. 
 
-function borrarDelCarrito(servId) {
+const borrarDelCarrito = (servId) => {
   const item = carritoServicios.find((serv) => serv.id === servId)
   const indice = carritoServicios.indexOf(item)
 
@@ -237,7 +237,7 @@ function borrarDelCarrito(servId) {
 
 // Funcion para sumar el valor de los servicios y mostrar valor total.
 
-function sumarCarrito() {
+const sumarCarrito = () => {
   carritoServicios.reduce((acc, serv) => acc + serv.precio, 0)
 
   const total = document.createElement('span')

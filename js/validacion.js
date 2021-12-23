@@ -4,7 +4,7 @@
 
 // Validar la selección de servicios para poder pasar al CheckOut
 
-function validarSelecServicios() {
+const validarSelecServicios = () => {
     if (carritoServicios.length == 0) {
 
         Swal.fire({
